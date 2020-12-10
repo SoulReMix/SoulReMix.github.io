@@ -1,0 +1,219 @@
+﻿<html>
+<head>
+<link rel="shortcut icon" href="Photo\Logo.png">
+<title>Інформація про музей присвячений єврейському народу та Голокосту</title>
+</head>
+<style>
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: linear-gradient(to bottom,#9F3258 , #262627,#262627, #9F3258);
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background:linear-gradient(to bottom,#9F3258 , #262627 100%, #9F3258);
+  border-radius: 100%;
+  width: 55px;
+  height: 55px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+::-webkit-scrollbar {width: 12px;height: 12px;}
+::-webkit-scrollbar-track-piece {background:linear-gradient(to bottom,#9F3258 , #262627 50%, #9F3258);}
+::-webkit-scrollbar-thumb:vertical {height:10px;background:#272c35;}
+::-webkit-scrollbar-thumb:vertical:hover {background:#71CA55;}
+::-webkit-scrollbar-thumb:horizontal {width:10px;background:#272c35;}
+::-webkit-scrollbar-thumb:horizontal:hover {background:#71CA55;}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+float: left;
+height: 70px;
+  margin-left: 40%;
+  margin-right: auto;
+  width: 250px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+  }
+body{
+background: linear-gradient(to bottom left,#8B3CDA 10%,#028489,#6495ED,#8B3CDA 90%);
+topmargin="15px";
+  margin: 0;
+  font-family: URW Chancery L, cursive;
+}
+.mainbg{
+margin-left:5%;
+margin-right:5%;
+margin-top:3%;
+overflow: hidden;
+background: linear-gradient(to top, #000000, #333 90%);
+opacity: 0.85;
+border: 5px outset;
+border-image: linear-gradient(to bottom,#9F3258 , #262627 100%, #9F3258);
+border-image-slice:2;
+}
+.mainbg a{
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left:45px;
+  margin-right:45px;
+}
+.image{
+text-align: center;
+margin: 2%;
+padding: 2%;
+}
+.image figcaption{
+margin: 0 auto 5px;
+font-size:16px;
+color:#599dc8;
+}
+.scale{
+transition: 0.7s;
+transition-delay:0.5s;
+}
+.scale:hover{
+animation-delay: 0.5s;
+transform: scale(2);
+}
+.text{
+color: #599DC8;
+margin: 0 5%;
+font-size: 30px;
+text-align: center;
+font-weight:bolder;
+}
+p{
+font-size:17px;
+float: left;
+margin: 2% 5%;
+color:#f2f2f2;
+}
+h2{
+color: #599dc8;
+ text-align: center;
+ margin-left:-40%;
+ font-size: 25px;
+}
+h1{
+padding-top:1%;
+}
+.forimage{
+text-align: center;
+margin: 5%;
+}
+</style>
+<body>
+<div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+<div class="topnav"><a class="active">Інформація про музей присвячений єврейському народу та Голокосту</a></div>
+<div class="mainbg">
+<h1 class="text">Перша зала - "Світ, знищений Голокостом"</h1>
+<h1 class="image"><img src="Photo\Gzal1.jpg" alt="Перша зала" class="scale">
+</h1>
+<p>Складається з розділів, присвячених юдаїзму та духовному світові євреїв, а також ключовим подіям історії євреїв України XVII–XX століть. Серед експонатів — старовинні сувої Книги Книг, Корони Тори, колекція мезуз, рімонім та інших предметів, а разом із тим — описання драматичних історій реліквій, що були свідками і подій ХІХ ст. і Голокосту. У цьому залі встановлено мультимедійні інсталяції, інфокіоски доповнюються відтвореною майстернею єврея-чоботаря та катеринославським фотоательє.</p>
+<p>Перша зала Музею. Відтворення катеринославського фотоательє та майстерні єврея-чоботаря
+Особливе місце присвячено історії хасидизму, життю і діяльності сьомого Любавицького Ребе Менахема-Мендла Шнеєрсона. Це тим більш важливо для Дніпра, що з ним тісно пов'язані доля і діяльність його батька — ребе Леві-Іцхака Шнеєрсона.
+Також експозиція першого залу містить унікальні експонати, присвячені участі євреїв у Першій світовій війні, революційних подіях 1917-1920-х рр., становленні землеробських колоній тощо. Музейні матеріали спрямовані на розвінчання деяких стереотипних уявлень, як-то про «єврея-комісара» чи «українця — петлюрівського погромника». Відвідувачі можуть чимало дізнатися про сіоністський рух в Україні та про демократизм Української Центральної Ради, про єврейські погроми та ставлення до них Петлюри, про євреїв — радянських лідерів та євреїв — жертв радянського режиму.
+Нова експозиція присвячена масовим репресіям 1920–1930-х рр., зокрема, євреям у структурах ВЧК–ОГПУ–НКВС та євреям — жертвам репресій. В музеї створюється спеціальна експозиція, присвячена Голодомору українського народу 1932—1933 рр., де буде відображена, зокрема, доля євреїв та інших національних меншин — жертв злочину сталінського режиму.
+</p>
+</div>
+<div class="mainbg">
+<h1 class="text">Другий зал - "Голокост"</h1>
+<h1 style="float: left; margin-left: 16%" class="image"><img src="Photo\Gzal2.jpg" alt="Друга зала (фото 1)" class="scale"><figcaption>"Бабин Яр - Бабини Яри України"</figcaption></h1>
+<h1 style="float: right; margin-right: 16%" class="image"><img src="Photo\Gzal3.jpg" alt="Перша зала (фото 2)" class="scale"><figcaption>"Концтабори та табори смерті.Янівский табір"</figcaption></h1>
+<p>На початку експозиції мова йде про виникнення нацистської ідеології, її антисемітську спрямованість. У центрі уваги — ідеологічна обробка свідомості німецької молоді, історія створення та функціонування «Гітлер'югенду», передана унікальними експонатами та кадрами документальної кінохроніки. Про «Кришталеву ніч», нацистські расові закони, антисемітську пропаганду в Німеччині та окупованій нацистами Європі розповідають тогочасні фільми, книги, газети, листівки і рідкісні предмети.
+Події на українських теренах відтворюються у розділі «Завтра була війна» та в експозиціях, присвячених подіям після червня 1941-го — евакуації, депортації, гетто, концтаборам і «центрам знищення», колабораціонізму, Опору нацизму і «подвигу Праведників народів світу».
+Відвудувачі можуть почути розповідь про духовний подвиг Митрополита Андрея Шептицького та Омеляна Ковча — історію спасіння родини Арона Вайса та інші драматичні сторінки історії. Музей не оминає важких питань історі на кшталт ставлення українських націоналістів до Голокосту, ролі ОУН та УПА в історії євреїв України — та участі самих євреїв у формуваннях УПА. Однією з кульмінаційних частин музею є діорама «Бабин Яр. Бабині Яри України», свідчення масового знищення євреїв — речі та їхні історії, нацистські накази та зафільмовані кадри розстрілів. Величезний обсяг інформації містить мультимедійна карта «Єврейські громади України під час Голокосту» — стислий перелік даних, про які повідомляє карта, складає більше 400 сторінок тексту. Пам'яті шести мільйонів загиблих присвячений «Зал імен — зал пам'яті».
+</p>
+</div>
+<div class="mainbg">
+<h1 class="text">Третя зала - "Світ після Голокосту. Єврейська культура"</h1>
+<h1 class="image"><img src="Photo\Gzal4.jpg" alt="Третя зала" class="scale"><figcaption>Експозиція музею "Трагедія XX ст.". Головна ідея - "Чужого болю не буває..."</figcaption></h1>
+<p>У залі розміщено експозиції, які об'єднані спільною темою «Світ після Голокосту». Особливе місце займає експозиція «Трагедії ХХ ст.», головна ідея якої — «Чужого болю не буває». Тут представлено документи, фотографії, особисті речі та інші експонати, пов'язані з вірменським геноцидом 1915 р., депортацією кримських татар та інших народів Криму (вірмен, болгар, греків), Волинською трагедією 1943 р., а також геноцидами в Камбоджі та Руанді.</p>
+</div>
+<div class="mainbg">
+<a href="Main.html"><p style="font-size: 35px; font-weight: bold; color:599dc8;margin-left: 23%">Повернутися на попередню сторінку</p></a>
+</div>
+<script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+</script>
+</body>
+</html>
