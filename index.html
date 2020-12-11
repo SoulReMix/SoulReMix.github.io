@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 <head>
 <link rel="shortcut icon" href="Photo\Logo.png">
 <title>Стартова сторінка</title>
@@ -77,14 +77,30 @@
 ::-webkit-scrollbar-thumb:horizontal {width:10px;background:#272c35;}
 ::-webkit-scrollbar-thumb:horizontal:hover {background:#9F3258;}
 body{
-background-image: url(Photo/Dnepr.jpg);
+  width: 100%;
+  height: 100%;
+  background-image: url(Photo/Dnepr.jpg);
 background-color: #f2f2f2;
 background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 -webkit-background-size: cover;
-topmargin="15px";
   margin: 0;
+  font-family: Helvetica, sans-serif;
+  position: relative;
+}
+.Back{
+  position:absolute;
+  left: 15%;
+  right: 15%;
+  top: 15%;
+  bottom: 15%;
+overflow: hidden;
+background: linear-gradient(to top, #000000, #333 90%); 
+opacity: 0.85;
+border: 5px outset;
+border-image: linear-gradient(to bottom,#9F3258 , #262627 100%, #9F3258);
+border-image-slice:2;
   font-family: Helvetica, sans-serif;
 }
 header{
@@ -94,6 +110,19 @@ text-align:center;
 font-size:20px;
 background-color:#333;
 }
+.down{
+  height: 30px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0px;
+  color: #f2f2f2;
+padding: 1% 2%;
+text-align:center;
+font-size:20px;
+background-color:#333;
+position:absolute;
+}
 a{
 text-decoration:none;
 color:#f2f2f2;
@@ -102,7 +131,25 @@ transition:0.5s;
 a:hover{
 color: #066DB8;
 }
+.action{
+  font-size: 18px;
+  padding: 5px;
+background-color: #333;
+color: #f2f2f2;
+border-image: radial-gradient(ellipse,#111 50%,#f2f2f2);
+border-image-slice: 1;
+}
 </style>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script>
+ $(document).ready(function(){
+   $(".back").fadeOut();
+   $(".action").click(function(){
+     $(".out").fadeOut();
+     $(".back").fadeIn();
+   });
+ });
+</script>
 <body>
 <div class="preloader">
   <div class="preloader__row">
@@ -111,11 +158,21 @@ color: #066DB8;
   </div>
 </div>
 <header>
-<a style="margin-right: 5%" href="index.html">Головна</a>
+<a style="margin-right: 5%" href="First.html">Головна</a>
 <a style="margin-right: 5%; margin-left:5%" href="Main.html">Інформація</a>
 <a style="margin-left: 5%" href="Form.html">Анкета</a>
 </header>
-<h1 style="text-align: center;margin-top:24%;margin-bottom:20%; color:#f2f2f2;background:rgba(27,28,28,0.8);margin-left:25%;margin-right:25%;padding:1%;">Історичні місця в місті Дніпро</h1>
+<h1 class="out" style="position: absolute; text-align: center;margin-top:20%; color:#f2f2f2;background:rgba(27,28,28,0.8);margin-left:35%;padding:1%;">Історичні місця в місті Дніпро</h1>
+<div class="back">
+  <h1 style="text-align: center; color: #f2f2f2;">Дніпро</h1>
+  <p style="color: #f2f2f2;margin: 3% 5%;font-size: 22px;font-family:Helvetica, sans-serif ;">Дніпро́ (у 1926—2016 роках — Дніпропетровськ) — місто в Україні, адміністративний центр Дніпропетровської області, Дніпровського району та Дніпровської міської громади. Місто є четвертим за чисельністю населення в Україні після Києва, Харкова та Одеси. Дніпро вважається «космічною столицею» України.
+
+    Як адміністративний центр приєднаних до Російської імперії земель запорозьких козаків (місто засновано раніше 1645 як Новий Кодак), у 1776 році у пониззі річки Самари і переназвано російськими окупантами у Катеринослав, у 1787 році перенесено на теперішнє місце на Дніпрі, поряд з козацькою слободою Половицею. Також на території сучасного міста на той час вже існувала низка козацьких поселень (містечко Нові Кодаки та інші).
+    
+    Катеринослав став адміністративним центром захоплених Російською імперією при Катерині II великих територій Українського степу, зокрема після знищення Запорозької Січі, Кючук-Кайнаджійського і Ясського договорів. Його початково задумано як третю столицю колишньої Російської імперії, після Москви і Петербурга. Один з найбільших промислових центрів УРСР, Дніпропетровськ у XX ст. був одним із ключових центрів металургійної, ядерної, оборонної та космічної промисловості СРСР. Через свою військову промисловість місто перебувало у статусі закритого до 1990-х років.
+    
+    У сучасній Україні, так само як і впродовж своєї попередньої історії, Дніпро лишається одним із її найвизначніших політичних, промислових, фінансових, наукових та культурних центрів. Дніпро є центром Дніпровської агломерації з населенням майже 1,5 млн осіб.</p>
+</div>
 <script>
   window.onload = function () {
     document.body.classList.add('loaded_hiding');
@@ -125,5 +182,10 @@ color: #066DB8;
     }, 500);
   }
 </script>
+<div class="down">
+  <button class="action">
+    ▶ Натисни на мене! ◀
+  </button>
+</div>
 </body>
 </html>
