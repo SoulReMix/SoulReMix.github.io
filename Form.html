@@ -1,7 +1,7 @@
-﻿<html>
+<html>
 <head>
 <link rel="shortcut icon" href="Photo\Logo.png">
-<title>Анкета</title>
+<title>Стартова сторінка</title>
 </head>
 <style>
 .preloader {
@@ -77,16 +77,17 @@
 ::-webkit-scrollbar-thumb:horizontal {width:10px;background:#272c35;}
 ::-webkit-scrollbar-thumb:horizontal:hover {background:#9F3258;}
 body{
-background: radial-gradient(ellipse,#111 20%,#f2f2f2,#333 );
+  background: radial-gradient(circle,rgb(12, 65, 82) 0%,rgb(32, 129, 158) 70%, rgb(32, 179, 224) 100% );
 background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 -webkit-background-size: cover;
 topmargin="15px";
   margin: 0;
-  font-family: Helvetica, sans-serif;
+  font-family: URW Chancery L, cursive;
 }
 header{
+  opacity: 0.8;
 color: #f2f2f2;
 padding: 1% 2%;
 text-align:center;
@@ -104,8 +105,8 @@ color: #066DB8;
 table{
 text-align:center;
 width:600px;
-color:#f2f2f2;
-background: radial-gradient(circle,#111,#000 95%,#333);
+color:#000000;
+background: radial-gradient(circle,rgb(100, 100, 100),rgb(192, 192, 192) 95%,rgb(255, 255, 255));
 border: 1px solid black;
 margin-top:16%;
 }
@@ -118,12 +119,12 @@ margin-top:16%;
   </div>
 </div>
 <header>
-<a style="margin-right: 5%" href="index.html">Головна</a>
+<a style="margin-right: 5%" href="First.html">Головна</a>
 <a style="margin-right: 5%; margin-left:5%" href="Main.html">Інформація</a>
 <a style="margin-left: 5%" href="Form.html">Анкета</a>
 </header>
 <form action="FormProcess.php" method="post">
-<table align="center" style="posotion:relative;">
+<table align="center" style="position: relative;">
 <tr align="center">
 <td>Прізвище:</td>
 <td align="left"><input type = "text" name = "Surname" size = 10 maxlength = 15 autocomplete="off"></td>
