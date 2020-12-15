@@ -48,6 +48,13 @@ body{
   a{
       margin: 0 5%;
   }
+.amain{
+	  background: radial-gradient(circle,#75A2A9,#333);
+	  padding:0.5%;
+	  border:1px solid black;
+	  border-image: radial-gradient(circle,#333,#75A2A9);
+	  border-image-slice:1;
+  }
   .out{
     position: absolute;
     text-align: center;
