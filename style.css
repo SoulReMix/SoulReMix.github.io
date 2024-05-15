@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+}
+body{
+    background: rgb(66, 66, 66) ;
+    min-height: 100vh;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+.menu{
+    display: flex;
+    background: black;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: space-around;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 500px;
+    height: 100px;
+    color: white;
+    left: 38%;
+    bottom: 20px;
+}
+.data{
+    display: flex;
+    justify-content: space-around;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.target{
+    left: 0px;
+    top: 0px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgb(92, 92, 241);
+}

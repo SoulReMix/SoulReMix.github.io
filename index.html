@@ -1,22 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/JsLabs/style.css">
-    <title>Lab 15</title>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="Mainbox">
-            <div class="links">
-                <a href="./add.html" id="first">Перше завдання</a>
-                <a href="./timer.html" id="second">Друге завдання</a>
-                <a href="./aim.html" id="first">Третє завдання</a>
-                <a href="/JsLabs/test/aim.html" id="first">Четверте завдання</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/JsLabs/Lab17/clockStyle.css">
+    <script src="/JsLabs/Lab17/clock.js" language="javascript"></script>
+    
+  </head>
+  <body onload="startclock()">
+
+    <div id="area" class="wrapper"></div>
+
+    <span id="target" class="target"></span>
+    <div class="container">
+      <div class="Mainbox">
+          <div class="Clock">
+              <div class="time">
+                  <p id="hours"></p>
+                  <p>:</p>
+                  <p id="mins"></p>
+                  <p>:</p>
+                  <p id="seconds"></p>
+              </div>
+              <div class="rippleeffect">
+                  <span></span>
+              </div>
+              <div class="date">
+                  <p id="day"></p>
+                  <p>.</p>
+                  <p id="month"></p>
+                  <p>.</p>
+                  <p id="year"></p>
+              </div>
+          </div>
+      </div>
+  </div>
+        <div class="menu">
+          <div class="data">
+            <div class="count">
+              <p class="count" id="counterleg">Влучення</p>
+              <p class="data" id="counter">0</p>
             </div>
+            <div class="rmp">
+              <p class="rpmleg">Влучення в секунду</p>
+              <p class="data" id="rpm">0</p>
+            </div>
+            <div class="timer">
+              <p class="timerleg">Таймер</p>
+              <p class="data" id="timer">0</p>
+            </div>
+            <div class="misses">
+              <p class="misseslge">Промахи</p>
+              <p class="data" id="misses">0</p>
+            </div>
+            <div class="accuracy">
+              <p>Точність</p>
+              <p class="data" id="acc">0</p>
+            </div>
+          </div>
+
+          
+
+          <div class="buttons">
+            <button type="button" onclick="start()" id="start">Start</button>
+            <button type="button" id="restart">Restart</button>
+            <button type="button" onclick="stop()">Stop</button>
+          </div>
         </div>
-    </div>
-</body>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+  
 </html>
